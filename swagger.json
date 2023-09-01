@@ -1,0 +1,37 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Hello World API",
+      "description": "Wrapper API for Hello World.",
+      "version": "1.0.0"
+    },
+    "basePath": "/api/rest_v1",
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/hello": {
+        "get": {
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "Hello message"
+            }
+          },
+          "parameters": [
+            {
+              "name": "name",
+              "in": "query",
+              "type": "string",
+              "default": "Steve",
+              "description": "Your name"
+            }
+          ]
+        }
+      }
+
+    }
+  }
+  

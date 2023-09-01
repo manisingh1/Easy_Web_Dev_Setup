@@ -1,0 +1,12 @@
+flask
+redis
+python-decouple
+requests
+debugpy
+aiohttp
+ptvsd
+flask-restful
+flask_swagger_ui
+Flask-CORS
+pytest 
+pytest-flask

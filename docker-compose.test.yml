@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  test-web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: debug
+    ports:
+      - "5678:5678"
+    environment:
+      FLASK_ENV: testing
+    volumes:
+      - .:/usr/src/app
+
+  redis:
+    image: "redis:alpine"
